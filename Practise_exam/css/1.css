@@ -1,0 +1,110 @@
+/* @import url("/practises/lesson18/css/color.css"); */
+
+body{
+  box-sizing: border-box;
+
+}
+
+.items{
+  display: grid;
+  grid-gap: 2px;
+  
+
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: repeat(12,1fr) ;
+  height: 800px;
+
+}
+
+
+.item{
+  padding:10px;
+  color:white;
+  background-color:rgb(0, 191, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p{
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.item:nth-child(1){
+  background-color:#c9316b;
+  grid-column: span 4 ;
+ 
+  grid-row: span 2;
+}
+
+.item:nth-child(2)
+{
+  background-color: #ca319d;
+  grid-column: span 4;
+  grid-row: span 4;
+
+}
+.item:nth-child(3){
+  background-color:#ed6d61;
+  grid-column: span 8;
+  grid-row: span 8;
+  font-size: 60px;
+  font-weight:bold;
+  
+}
+
+.item:nth-child(4){
+  background-color:#efc436;
+  grid-column: span 4 ;
+  grid-row: span 2;
+}
+.item:nth-child(5){
+  background-color:#528c44;
+  grid-column: span 4 ;
+  grid-row: span 2;
+
+} 
+.item:nth-child(6){
+  background-color:#257c87;
+  grid-column: span 4 ;
+  grid-row: span 2;
+
+}
+.item:nth-child(7){
+  background-color:#799927;
+  grid-column: span 4 ;
+  grid-row: span 2;
+
+}
+.item:nth-child(8){
+  background-color:#478655;
+  grid-column: span 1 ;
+  grid-row: span 2;
+
+
+} 
+.item:nth-child(9){
+  background-color:#2fc9c2;
+  grid-column: span 3 ;
+  grid-row: span 2;
+
+}
+.item:nth-child(10){
+  background-color:#32c98e;
+  grid-column: span 4 ;
+  grid-row: span 2;
+}
+.item:nth-child(11){
+  background-color:#544078;
+  grid-column: span 8 ;
+  grid-row: span 2;
+}
+.item:nth-child(12){
+  background-color:#de222f;
+  grid-column: span 4 ;
+  grid-row: span 2;
+}
+
+
+

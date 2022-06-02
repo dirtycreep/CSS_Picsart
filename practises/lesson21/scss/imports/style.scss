@@ -1,0 +1,116 @@
+$font-weights: (
+    "regular":400,
+    "medium":500,
+    "bold":700,
+);
+
+// body{
+//     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+//     font-weight: map-get($font-weights,bold);
+
+// }
+
+// .d1{
+//     background-color:aquamarine;
+//     .p1{
+//         color:red;
+//         font-weight:900;
+//         border: 1px solid black;
+//     }
+
+//     .p2{
+
+//         background-color:yellow;
+
+//     }
+//     .p3{
+//         @extend .p2;
+//         @extend .p1;
+
+//     }
+
+
+// }
+
+
+// @function weight($weight-name){
+//     @return map-get($font-weight, $weight-name);
+// }
+// @function weight($x){
+//     @return map-get($font-weights, $x);
+// }
+// body{
+  
+//     font-weight: weight(bold);
+
+// }
+
+
+// $max:20;
+
+// @for $i from 1 through $max{
+
+    // .class-#{$i}__l{
+        // background-color:red;
+
+    // }
+    // ul:nth-child(3n + #{$i}){
+    //     color:red;
+    //     z-index: #{$i};
+    // }
+
+// }
+// $sizes: 40px, 50px, 80px, 120px, 200px;
+
+
+// @each $size in $sizes{
+
+//     .icon-#{$size}{
+//         font-size:$size;
+//         height:$size;
+//         width:$size;
+//         background-color:red;
+//         margin:10px;
+
+//     }
+    
+// }
+// $sizes:50px, 100px, 150px;
+
+// @each $size in $sizes{
+//     .box-#{$size}{
+//         width: $size;
+//         height:$size;
+//         border-radius: $size - 40px;
+//         background-color:red;
+//         margin:10px;
+//     }
+
+   
+    
+// }
+
+@mixin avatar($size, $circle: false){
+    width:$size;
+    height:$size;
+    background-color: red;
+    margin:10px;
+
+    @if $circle{
+        border-radius:$size /2;
+        border:3px solid green;
+    }
+    @else{
+        background-color:yellow;
+    }
+}
+
+.square-av{
+    @include avatar(100px, $circle:false);
+
+}
+.circle-av{
+    @include avatar(100px, $circle:true);
+    
+}
+

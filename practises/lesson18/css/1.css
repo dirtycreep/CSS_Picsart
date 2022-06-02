@@ -1,0 +1,209 @@
+/* @import url("/practises/lesson18/css/color.css"); */
+
+/* @keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(720deg);
+    }   
+ } */
+/* body{
+   margin: 0 ;
+} */
+
+/* .loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+} */
+/* img{
+    animation: spin 2s linear infinite;
+    height:100px
+} */
+
+/* .spinner{
+    border: 10px solid fuchsia;
+    height:80px;
+    width: 80px;
+    border-radius:50%;
+    border-top: 10px solid rgb(81, 2, 81);;
+    animation: spin 2s linear infinite;
+    
+} */
+/* 
+button{
+    outline:none;
+}
+
+input:focus,
+button:focus{
+    border: 2px solid red;
+}
+input{
+    outline:none;
+}
+button:focus{
+    
+} */
+/* 
+body {
+    background-color:orange;
+}
+
+div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: pink;
+}
+span{
+    font-size: 80px;
+    letter-spacing: 10px;
+    line-height: 1;
+    mix-blend-mode: exclusion;
+
+}
+div::before{
+    content: "";
+    position:absolute;
+    left:0;
+    top:0;
+    width:30px;
+    height:100%;
+    background-color:orange;
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+    }   
+ } */
+/* body{
+    display:flex;
+  flex-direction:column;
+}
+ header{
+     background-color:orange;
+     height: 100px;
+ }
+ main{
+     display: flex;
+     flex: 1;
+     height:800px;
+ }
+ aside{
+     flex-grow:1;
+     width: 20%;
+     height: 100%;
+     background-color:green;
+ }
+ section{
+     flex-grow:3;
+     height: 100%;
+     background-color:blue;
+ }
+ footer{
+     background-color:pink;
+     height:100px;
+ } */
+ html {
+
+    /* colours */
+    --textColor:#000;
+    --bodyBgColor:#FFF;
+    --chromeBGColor:#ACE;
+    --sectionBgColor:#CDE;
+    --sectionShadow:0 0.125rem 0.25em 0.125em #0005;
+    --sectionBorderRadius:0.5rem;
+    
+  
+    /* dynamic paddings */
+    --gap:min(1.5rem, 2vw);
+  }
+  
+  /* reset to give steady baseline */
+  
+  
+
+  
+  *, *:after, *:before {
+    box-sizing:border-box;
+    flex:1 0 auto;
+  }
+  
+  hr {
+    display:none;
+  }
+  
+  html, body {
+    height:100%;
+  }
+
+  body {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:blue;
+    background:yellow;
+  }
+  
+  #top,
+  #bottom {
+    width:100%;
+    flex-grow:0;
+    padding:1.5rem;
+    background:black;
+    box-shadow:grey;
+  }
+  
+  #top {
+    display:flex;
+    flex-wrap:wrap;
+  }
+  
+
+  
+  .content {
+    display:flex;
+    flex-wrap:wrap;
+    max-width:80em;
+    gap:0 var(--gap);
+    /* padding:var(--gap) var(--gap) 0; */
+    margin:auto;
+  }
+  
+  main {
+    width:50%;
+    min-width:min(36em, 100%);
+  }
+  
+  .extras {
+    min-width:min(12em, 100%);
+  }
+  
+  section {
+    height:40%;
+    padding:var(--gap) var(--gap) 0;
+    margin:0 0 var(--gap);
+    background:var(--sectionBgColor);
+   
+  }
+ 
+  
+  

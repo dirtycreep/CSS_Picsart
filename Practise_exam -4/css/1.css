@@ -1,0 +1,109 @@
+/* @import url("/practises/lesson18/css/color.css"); */
+
+body{
+  box-sizing: border-box;
+  background-color: white;
+  margin: 0 auto;
+
+}
+
+.items{
+  
+  margin: 40px;
+  
+  
+
+  display: grid;
+  
+  background-color: white;
+  
+  
+
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(6,1fr) ;
+
+
+}
+
+
+.item{
+  border: 1px dotted black;
+  
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.item:nth-child(1){
+  background-color: green;
+  grid-column: span 2;
+  grid-row:span 2;
+}
+.item:nth-child(2){
+  background-color: rgb(242, 242, 163);
+  grid-column: span 2;
+  grid-row:span 1;
+}
+.item:nth-child(3) 
+{
+  background-color: blue;
+  grid-column: span 1;
+  grid-row:span 1;
+
+}
+.item:nth-child(4) 
+{
+  background-color: yellow;
+  grid-column: span 2;
+  grid-row:span 2;
+
+}
+.item:nth-child(5) 
+{
+  background-color: rgb(242, 242, 163);
+  grid-column: span 2;
+  grid-row:span 1;
+
+
+}
+.item:nth-child(6) 
+{
+  background-color: yellow;
+  grid-column: span 1;
+  grid-row:span 1;
+ 
+
+}
+.item:nth-child(8) 
+{
+
+
+}
+.item:nth-child(9) 
+{
+
+
+}
+.item:nth-child(10) 
+{
+
+}
+.item:nth-child(11) 
+{
+ 
+
+}
+.item:nth-child(12) 
+{
+
+
+}
+.item:nth-child(13) 
+{
+
+
+}
+.item:nth-child(14) 
+{
+ 
+}
+
