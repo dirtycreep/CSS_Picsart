@@ -1,0 +1,69 @@
+header {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 60px;
+      grid-template-rows: 60px;
+}
+
+header .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  font-weight: bold;
+}
+
+header .item:nth-child(1) {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  grid-column: span 9;
+}
+
+header .item:nth-child(2), header .item:nth-child(3), header .item:nth-child(4) {
+  grid-column: span 1;
+  border-radius: 4px;
+}
+
+header .item:nth-child(2):hover, header .item:nth-child(3):hover, header .item:nth-child(4):hover {
+  background-color: #3e8de8;
+  grid-column: span 1;
+  color: white;
+  border-radius: 4px;
+}
+
+.section {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1000px;
+  margin: 1rem auto;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.section .stickyo {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 100%;
+  display: -ms-grid;
+  display: grid;
+  width: 40px;
+  grid-auto-flow: row;
+}
+
+.section .stickyo img {
+  height: 50px;
+  width: 50px;
+}
+/*# sourceMappingURL=style.css.map */
