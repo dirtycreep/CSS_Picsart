@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 40px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.pricing-table-container .pricing-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container .h2 {
+  margin-right: 10px;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container .plans-switch {
+  width: 250px;
+  background: #050548;
+  height: 55px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 24px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container .plans-switch::before {
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 120px;
+  border-radius: 24px;
+  background: green;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 6px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container .monthly {
+  position: absolute;
+  left: 36px;
+  top: 18px;
+  pointer-events: none;
+}
+
+.pricing-table-container .pricing-header .plans-switch-container .yearly {
+  position: absolute;
+  left: 36px;
+  top: 18px;
+  pointer-events: none;
+}
+
+.pricing-table-container .pricing-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
+}
+
+.pricing-table-container .pricing-table .table {
+  background: #ef476f1f;
+  width: 260px;
+  padding: 32;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

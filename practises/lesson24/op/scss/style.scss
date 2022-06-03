@@ -1,0 +1,90 @@
+$ubuntu: "Ubuntu", sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding:40px;
+    font-family:$ubuntu;
+}
+.pricing-table-container{
+    .pricing-header{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+       .plans-switch-container{
+        position: relative;
+        color:white;
+        display:inline-block;
+
+        .h2{
+            margin-right: 10px;
+        }
+        .plans-switch{
+            width:250px;
+            background:rgb(5, 5, 72);
+            height:55px;
+            appearance: none;
+            border-radius:24px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+
+            &::before{
+                content:"";
+                position: absolute;
+                height: 44px;
+                width:120px;
+                border-radius:24px;
+                background:green;
+                top: 50%;
+                transform:translateY(-50%);
+                left: 6px;
+                transition: all 0.5s;
+    
+    
+            }
+        }
+        .monthly{
+            position: absolute;
+            left:36px;
+            top: 18px;
+            pointer-events: none;
+    
+        }
+        .yearly{
+            position: absolute;
+            left:36px;
+            top: 18px;
+            pointer-events: none;
+    
+        }
+
+
+    }
+
+    }
+   
+  
+
+    .pricing-table{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 32px;
+        .table{
+            background:#ef476f1f;
+            width: 260px;
+            padding:32;
+            position: relative;
+        }
+
+    }
+    
+
+}
