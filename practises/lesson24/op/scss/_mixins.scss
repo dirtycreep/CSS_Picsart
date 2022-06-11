@@ -1,0 +1,10 @@
+@mixin FlexCenter(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin durtions(){
+    position: absolute;
+    top: 18px;
+    pointer-events: none;
+}
